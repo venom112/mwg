@@ -1,0 +1,196 @@
+@import url("./all.min.css");
+@import url("./bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+:root {
+  --dark-color: black;
+  --light-color: white;
+  --danger-color: red;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--light-color);
+  font: 400 14px/20px Montserrat, sans-serif;
+  background-color: var(--dark-color);
+}
+img {
+  width: 100%;
+}
+/* Navbar */
+.navbar {
+  color: var(--light-color);
+  background-color: transparent;
+  position: fixed;
+}
+.navbar .container-fluid {
+  height: 75px;
+  padding: 0 30px;
+}
+.navbar .logo a {
+  color: var(--light-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  padding: 5px 0;
+}
+.navbar .logo img {
+  width: 60px;
+}
+.navbar button.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .collapse {
+  flex-direction: row-reverse;
+}
+/* links */
+.nav-link {
+  cursor: pointer;
+  color: var(--light-color);
+  font-size: 12px;
+  font-weight: 400;
+  transition: all 0.2s;
+  padding: 5px 3px 0px 10px;
+}
+.nav-link.active {
+  border: 1px solid var(--danger-color);
+  border-right: none;
+  color: white !important;
+}
+.dropdown-menu .dropdown-item:hover,
+.nav-link:hover {
+  color: var(--danger-color);
+}
+/* Dropdown */
+.dropdown-toggle::after {
+  display: none;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 60px !important;
+  padding: 0;
+  background-color: var(--dark-color);
+  border: 1px solid #464646;
+  border-radius: 0%;
+}
+.dropdown-menu::before {
+  content: "";
+  background-color: transparent;
+  width: 70px;
+  height: 35px;
+  position: absolute;
+  top: -35px;
+}
+.dropdown-menu .dropdown-item {
+  padding: 5px 20px;
+  color: var(--light-color);
+  font-size: 12px;
+}
+.dropdown-menu .dropdown-item:not(.last) {
+  border-bottom: 1px solid #464646;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--dark-color);
+}
+/* End Navbar */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.carousel{
+  max-width: 2000px;
+}
+.carousel .card{
+  background-color: transparent;
+}
+#slide{
+  height: 900px;
+  width: 450px;
+
+}
+.carousel .card-1{
+  height: 900px;
+  background-image: url(../images/graphic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.carousel .card-2{
+  height: 900px;
+  background-image: url(../images/production.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.carousel .card-3{
+  height: 900px;
+  background-image: url(../images/web.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+}
+.carousel .card-4{
+  height: 900px;
+  background-image: url(../images/ongroundactivation.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+
+}
+.carousel .card-5{
+  height: 900px;
+  background-image: url(../images/3ddesign.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  
+}
+.carousel .card-6{
+  height: 900px;
+  background-image: url(../images/digital.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  
+}
+
+
+
+p{
+  font-size: larger;
+  color: white;
+  padding: 25px;
+  margin-top: 700px;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+.carousel button{
+  background-color: transparent;
+  margin-left: 35px;
+  text-align: center;
+  border-color: red;
+  box-sizing: border-box;
+  height: 40px;
+  width: 120px;
+}
+
+
+.carousel .button11 :hover{
+  background-color: red;
+}

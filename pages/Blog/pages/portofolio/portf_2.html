@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      crossorigin
+    />
+    <link rel="stylesheet" href="../../css/mwg.css" />
+    <title>MWG Success Stories: Inspiring Achievements and Results</title>
+    <style>
+      .project-page .content {
+        margin-bottom: 35px;
+      }
+      .single-project .content h3 {
+        font: 400 16px/28px Roboto, Helvetica Neue, sans-serif;
+        letter-spacing: normal;
+        margin: 0 0 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-dark fixed-top navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="logo">
+          <a href="#"><img src="../../imgs/logo.jpg" alt="" /></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul
+            class="navbar-nav my-2 my-lg-0 navbar-nav-scroll"
+            style="--bs-scroll-height: 100px"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BEHANCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../big-bang.html">BIG BANG</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                SERVICES
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">DIGITAL</a></li>
+                <li><a class="dropdown-item" href="#">GRAPHIC DESIGN</a></li>
+                <li><a class="dropdown-item" href="#">PRODUCTION</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">WEB & MOBILE APPS</a>
+                </li>
+                <li><a class="dropdown-item" href="#">BTL</a></li>
+                <li><a class="dropdown-item last" href="#">3D DESIGN</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../portofolio.html">PORTFOLIO</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../../Blog.html">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar Section -->
+
+    <div _ngcontent-icn-c28="" class="single-project container project-page">
+      <div class="social-media d-none d-md-block">
+        <p class="d-inline">share:</p>
+        <div class="icons d-inline">
+          <a href="https://web.facebook.com"
+            ><i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://www.pinterest.com"
+            ><i class="fa-brands fa-pinterest"></i>
+          </a>
+          <a href="https://plus.google.com"
+            ><i class="fa-brands fa-google-plus"></i
+          ></a>
+          <a href="https://www.tumblr.com"
+            ><i class="fa-brands fa-square-tumblr"></i
+          ></a>
+          <a href="https://twitter.com"
+            ><i class="fa-brands fa-square-twitter"></i
+          ></a>
+          <a class="text-light" href="https://www.snapchat.com"
+            ><i class="fa-brands fa-square-snapchat"></i
+          ></a>
+        </div>
+      </div>
+      <!---->
+      <div class="title">
+        <h1>Mazaya</h1>
+      </div>
+      <div _ngcontent-icn-c28="" class="main-video">
+        <div
+          id="videosModal"
+          tabindex="-1"
+          aria-labelledby="minVideo"
+          aria-hidden="true"
+          class="modal fade"
+        >
+          <div _ngcontent-icn-c28="" class="modal-dialog">
+            <div _ngcontent-icn-c28="" class="modal-content">
+              <div _ngcontent-icn-c28="" class="modal-body"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../js/all.min.js"></script>
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/mwg.js"></script>
+    <script>
+      // to change bg from namePage.html
+      let namePage = window.location.pathname.split("/").pop();
+      let match = namePage.match(/\d+/);
+      let noPage = parseInt(match[0]);
+      let mainVideo = document.querySelector(".main-video");
+      mainVideo.style = `background-image: url(../../imgs/portofolio_imgs/i_${noPage}.jpeg);width: 100%;height: 600px;background-size: cover;background-position: 50%;margin-bottom: 35px;`;
+    </script>
+  </body>
+</html>
